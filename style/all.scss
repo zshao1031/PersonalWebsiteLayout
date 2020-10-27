@@ -1,0 +1,148 @@
+/*===========================*/
+/*【變數設定】*/
+
+/*使用顏色*/
+$color_White: #ffffff;  
+$color_Black: #000000;
+$color_Red: #A00404;
+$color_LightGray: #96A9C4;
+$color_DarkGray: #415165;
+$color_Blue: #96E9F6;
+
+/*使用字體粗細*/
+$fw_Medium: 500;
+$fw_Bold: 700;
+$fw_Black: 900;
+
+/*===========================*/
+/*【通用設定】*/
+
+/*使padding與border不會增加總寬度*/
+*,*:before,*:after{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+// /*版面水平置中容器*/
+// .container{
+//     max-width: 1200px;
+//     margin: 0 auto;
+// }
+
+/*字型設定*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+/*使圖片不會在下方多出2~3px空間*/
+img{
+    vertical-align: middle;
+}
+
+/*===========================*/
+/*【flex設定】*/
+.flex{
+    
+    &-cc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-bs{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+/*===========================*/
+.area_Profile{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+}
+
+.area_Profile__flexItem{
+
+    p{
+        color: #FFFFFF;
+        font-weight: $fw_Bold;
+        font-size: 24px;
+    }
+
+    h1{
+        color: #FFFFFF;
+        font-weight: $fw_Black;
+        font-size: 80px;
+        line-height: 94px;
+    }
+
+}
+
+.snsIconList__flexItem{
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.be_Icon{
+    background-image: url(../image/BE_Icon.svg);
+    &:hover{background-image: url(../image/BE_hover.svg);}
+}
+.fb_Icon{
+    background-image: url(../image/FB_Icon.svg);
+    &:hover{background-image: url(../image/FB_hover.svg);}
+}
+.ig_Icon{background-image: url(../image/IG_Icon.svg);
+    &:hover{background-image: url(../image/IG_hover.svg);}
+}
+.yt_Icon{background-image: url(../image/YT_Icon.svg);
+    &:hover{background-image: url(../image/YT_hover.svg);}
+}
+
+
+
+
+
+
+
+/*===========================*/
+/*【拆分出來設定行高】*/
+.lh-36{line-height: 36px;}
+.lh-42{line-height: 42px;}
+
+/*===========================*/
+/*【向左推出空間設定】*/
+.ml-16{margin-left: 16px;}
+
+/*===========================*/
+/*【向上推出空間設定】*/
+.mt-32{margin-top: 32px;}
+.mt-48{margin-top: 48px;}
+
+
+
+.mt-8{margin-top: 8px;}
+.mt-16{margin-top: 16px;}
+.mt-20{margin-top: 20px;}
+.mt-24{margin-top: 24px;}
+
+.mt-40{margin-top: 40px;}
+.mt-47{margin-top: 47px;}
+
+.mt-72{margin-top: 72px;}
+
+/*※放在最後面是因為這樣才不會被有設margin:0 auto;的蓋掉*/
+/*===========================*/
+
+
