@@ -17,9 +17,40 @@ body {
   font-style: italic;
 }
 
+/*字體粗細*/
+.fw-I {
+  font-weight: 500;
+}
+
+.fw-II {
+  font-weight: 700;
+}
+
+.fw_III {
+  font-weight: 900;
+}
+
 /*使圖片不會在下方多出2~3px空間*/
 img {
-  vertical-align: middle;
+  display: block;
+}
+
+/*置中對齊，框住範圍的容器*/
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container h2, .container p, .container ul {
+  width: 100%;
 }
 
 /*===========================*/
@@ -49,15 +80,16 @@ img {
 }
 
 /*===========================*/
+/*【個人介紹區】*/
 .area_Profile {
   width: 100vw;
   height: 100vh;
   background-image: url(../image/banner.png);
   background-repeat: no-repeat;
-  background-size: auto 100%;
   background-position: center center;
 }
 
+/*中間的文字內容等*/
 .area_Profile__flexItem p {
   color: #FFFFFF;
   font-weight: 700;
@@ -71,6 +103,7 @@ img {
   line-height: 94px;
 }
 
+/*社群網頁的按鈕設定*/
 .snsIconList__flexItem {
   display: block;
   width: 60px;
@@ -110,7 +143,89 @@ img {
 }
 
 /*===========================*/
-/*【拆分出來設定行高】*/
+/*【About區】*/
+.area_About {
+  background: #FFFFFF;
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+
+/*===========================*/
+/*【My Brand區】*/
+.area_MyBrand {
+  background: #000000;
+  padding-top: 64px;
+  padding-bottom: 160px;
+}
+
+/*===========================*/
+/*【Other Works區】*/
+.area_OtherWorks {
+  background: #FFFFFF;
+  padding-top: 64px;
+  padding-bottom: 160px;
+}
+
+.pictureList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pictureList li {
+  margin-top: 56px;
+}
+
+.pictureList h3 {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/*===========================*/
+/*【Contact區】*/
+.area_Contact {
+  background: #000000;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+/*===========================*/
+/*【通用標籤區】*/
+/*區域大標題*/
+.areaTitle {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 500;
+}
+
+/*水平置中對齊*/
+.m-0a {
+  margin: 0 auto;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+/*網頁主色、次要色、點綴色*/
+.c-p {
+  color: #000000;
+}
+
+.c-s {
+  color: #FFFFFF;
+}
+
+.c-a {
+  color: #891818;
+}
+
+/*linbe-height行高*/
 .lh-36 {
   line-height: 36px;
 }
@@ -119,48 +234,47 @@ img {
   line-height: 42px;
 }
 
-/*===========================*/
-/*【向左推出空間設定】*/
+/*寬度百分比*/
+.w-pc-32 {
+  width: 32%;
+}
+
+.w-pc-49 {
+  width: 49%;
+}
+
+.w-pc-66 {
+  width: 66%;
+}
+
+/*margin左推*/
 .ml-16 {
   margin-left: 16px;
 }
 
-/*===========================*/
-/*【向上推出空間設定】*/
-.mt-32 {
-  margin-top: 32px;
-}
-
-.mt-48 {
-  margin-top: 48px;
-}
-
-.mt-8 {
-  margin-top: 8px;
-}
-
+/*margin上推*/
 .mt-16 {
   margin-top: 16px;
 }
 
-.mt-20 {
-  margin-top: 20px;
-}
-
-.mt-24 {
-  margin-top: 24px;
+.mt-32 {
+  margin-top: 32px;
 }
 
 .mt-40 {
   margin-top: 40px;
 }
 
-.mt-47 {
-  margin-top: 47px;
+.mt-48 {
+  margin-top: 48px;
 }
 
-.mt-72 {
-  margin-top: 72px;
+.mt-56 {
+  margin-top: 56px;
+}
+
+.mt-68 {
+  margin-top: 68px;
 }
 
 /*※放在最後面是因為這樣才不會被有設margin:0 auto;的蓋掉*/
