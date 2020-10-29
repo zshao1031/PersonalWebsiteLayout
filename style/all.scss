@@ -7,9 +7,13 @@ $color_Secondary: #FFFFFF;
 $color_Adorn: #891818;
 
 /*使用字體粗細*/
-$fw_Medium: 500;
-$fw_Bold: 700;
-$fw_Black: 900;
+$fw-I: 500;
+$fw-II: 700;
+$fw-III: 900;
+
+.fw-I{font-weight: $fw-I;}
+.fw-II{font-weight: $fw-II;}
+.fw_III{font-weight: $fw-III;}
 
 /*===========================*/
 /*【通用設定】*/
@@ -27,11 +31,6 @@ body{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
 }
-
-/*字體粗細*/
-.fw-I{font-weight: 500;}
-.fw-II{font-weight: 700;}
-.fw_III{font-weight: 900;}
 
 
 
@@ -89,13 +88,13 @@ img{
 
     p{
         color: $color_Secondary;
-        font-weight: $fw_Bold;
+        font-weight: $fw_II;
         font-size: 24px;
     }
 
     h1{
         color: $color_Secondary;
-        font-weight: $fw_Black;
+        font-weight: $fw_III;
         font-size: 80px;
         line-height: 94px;
     }
@@ -130,9 +129,36 @@ img{
     background: $color_Secondary;
     padding-top: 64px;
     padding-bottom: 56px;
+
+    P{
+        font-size: 24px;
+        line-height: 42px;
+        font-weight: $fw-II;
+        text-align: center;
+
+    }
 }
 
+.workList{
+    
+    margin: 0 auto;
+    width: 384px;
+    border-top: 1px solid $color_Primary;
 
+    .workList__item{
+        font-size: 24px;
+        line-height: 42px;
+        text-align: center;
+        font-weight: $fw_II;
+
+        &::before{
+            border: 1px solid green;
+            color: red;
+            background: #000;
+        }
+    }
+
+}
 
 
 
@@ -215,6 +241,7 @@ img{
 
 /*margin上推*/
 .mt-16{margin-top: 16px;}
+.mt-24{margin-top: 24px;}
 .mt-32{margin-top: 32px;}
 .mt-40{margin-top: 40px;}
 .mt-48{margin-top: 48px;}

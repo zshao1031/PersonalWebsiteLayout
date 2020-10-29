@@ -3,6 +3,18 @@
 /*【變數設定】*/
 /*使用顏色*/
 /*使用字體粗細*/
+.fw-I {
+  font-weight: 500;
+}
+
+.fw-II {
+  font-weight: 700;
+}
+
+.fw_III {
+  font-weight: 900;
+}
+
 /*===========================*/
 /*【通用設定】*/
 /*使padding與border不會增加總寬度*/
@@ -15,19 +27,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
-}
-
-/*字體粗細*/
-.fw-I {
-  font-weight: 500;
-}
-
-.fw-II {
-  font-weight: 700;
-}
-
-.fw_III {
-  font-weight: 900;
 }
 
 /*使圖片不會在下方多出2~3px空間*/
@@ -150,6 +149,32 @@ img {
   padding-bottom: 56px;
 }
 
+.area_About P {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.workList {
+  margin: 0 auto;
+  width: 384px;
+  border-top: 1px solid #000000;
+}
+
+.workList .workList__item {
+  font-size: 24px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.workList .workList__item::before {
+  border: 1px solid green;
+  color: red;
+  background: #000;
+}
+
 /*===========================*/
 /*【My Brand區】*/
 .area_MyBrand {
@@ -255,6 +280,10 @@ img {
 /*margin上推*/
 .mt-16 {
   margin-top: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
 }
 
 .mt-32 {
