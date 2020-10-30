@@ -34,30 +34,14 @@ img {
   display: block;
 }
 
-/*置中對齊，框住範圍的容器*/
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.container h2, .container p, .container ul {
-  width: 100%;
-}
-
 /*===========================*/
 /*【flex設定】*/
 .flex-cc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -70,6 +54,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -162,17 +148,27 @@ img {
   border-top: 1px solid #000000;
 }
 
-.workList .workList__item {
+.workList__item {
   font-size: 24px;
   line-height: 42px;
   text-align: center;
   font-weight: 700;
+  margin-top: 32px;
 }
 
-.workList .workList__item::before {
-  border: 1px solid green;
-  color: red;
-  background: #000;
+.workList__item span {
+  position: relative;
+}
+
+.workList__item span::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50% 50%;
+  background: #891818;
+  left: -38px;
+  top: 3px;
 }
 
 /*===========================*/
@@ -183,6 +179,26 @@ img {
   padding-bottom: 160px;
 }
 
+.area_MyBrand h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 500;
+}
+
+.area_MyBrand p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+/*置中對齊，框住範圍的容器*/
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 /*===========================*/
 /*【Other Works區】*/
 .area_OtherWorks {
@@ -191,22 +207,27 @@ img {
   padding-bottom: 160px;
 }
 
-.pictureList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.area_OtherWorks h2 {
+  color: #000000;
+  text-align: center;
 }
 
-.pictureList li {
+.area_OtherWorks p {
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.pictureList__flexItem {
   margin-top: 56px;
 }
 
-.pictureList h3 {
+.pictureList__flexItem h3 {
+  font-size: 20px;
+  line-height: 42px;
+  font-weight: 500;
   text-align: center;
   margin-top: 16px;
 }

@@ -10,7 +10,6 @@ $color_Adorn: #891818;
 $fw-I: 500;
 $fw-II: 700;
 $fw-III: 900;
-
 .fw-I{font-weight: $fw-I;}
 .fw-II{font-weight: $fw-II;}
 .fw_III{font-weight: $fw-III;}
@@ -36,22 +35,10 @@ body{
 
 /*使圖片不會在下方多出2~3px空間*/
 img{
-    //vertical-align: middle;
     display: block;
 }
 
-/*置中對齊，框住範圍的容器*/
-.container{
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
-    h2, p, ul{
-        width: 100%;
-    }
-}
 
 /*===========================*/
 /*【flex設定】*/
@@ -59,12 +46,14 @@ img{
     
     &-cc{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
     
     &-bs{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
     }
@@ -140,27 +129,33 @@ img{
 }
 
 .workList{
-    
     margin: 0 auto;
     width: 384px;
     border-top: 1px solid $color_Primary;
-
-    .workList__item{
-        font-size: 24px;
-        line-height: 42px;
-        text-align: center;
-        font-weight: $fw_II;
-
-        &::before{
-            border: 1px solid green;
-            color: red;
-            background: #000;
-        }
-    }
-
 }
 
+.workList__item{
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: $fw_II; 
+    margin-top: 32px;
 
+    span{
+        position: relative;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border-radius: 50% 50%;
+            background: $color_Adorn;
+            left: -38px;
+            top: 3px;
+        }
+    }
+}
 
 /*===========================*/
 /*【My Brand區】*/
@@ -168,8 +163,30 @@ img{
     background: $color_Primary;
     padding-top: 64px;
     padding-bottom: 160px;
+    
+
+    h2{
+        color: $color_Secondary;
+        text-align: center;
+        font-weight: $fw_I;
+
+    }
+
+    p{
+        color: $color_Secondary;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: $fw_I;
+    }
+
 }
 
+/*置中對齊，框住範圍的容器*/
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
 /*===========================*/
 /*【Other Works區】*/
@@ -177,20 +194,32 @@ img{
     background: $color_Secondary;
     padding-top: 64px;
     padding-bottom: 160px;
-}
 
-.pictureList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    li{
-        margin-top: 56px;
+    h2{
+        color: $color_Primary;
+        text-align: center;
     }
 
+    p{
+        color: $color_Primary;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: $fw-I;
+    }
+}
+
+.pictureList__flexItem{
+
+    margin-top: 56px;
+
     h3{
+        font-size: 20px;
+        line-height: 42px;
+        font-weight: $fw_I;
         text-align: center;
         margin-top: 16px;
+        
     }
 }
 
@@ -204,7 +233,6 @@ img{
 }
 
 
-
 /*===========================*/
 /*【通用標籤區】*/
 
@@ -212,7 +240,7 @@ img{
 .areaTitle{
     font-size: 64px;
     line-height: 75px;
-    font-weight: 500;
+    font-weight: $fw-I;
 }
 
 /*水平置中對齊*/
