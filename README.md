@@ -1,8 +1,13 @@
-## ResumeLayout2
-切版作品：個人履歷版型2
-網址：https://zshao1031.github.io/ResumeLayout2/
+## Personal Website Layout
+
+切版作品：個人網站版型
+
+網址：https://zshao1031.github.io/PersonalWebsiteLayout/
+
 額外練習：
-1.使用Emmet一行把html寫完(含命名class及文字內容)
+
+1.盡量使用Emmet把html寫完
+
 2.使用Emment寫CSS、SCSS
-3.語意命名、小駝峰寫法
-4.一天內完成此作品
+
+3.研究Class與CSS功能配置

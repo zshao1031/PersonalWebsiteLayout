@@ -1,8 +1,11 @@
 @charset "UTF-8";
-/*===========================*/
+/*====================================================*/
 /*【變數設定】*/
-/*使用顏色*/
-/*使用字體粗細*/
+/*網站配色*/
+/*字體粗細*/
+/*====================================================*/
+/*【共用標籤設定】*/
+/*字體粗細*/
 .fw-I {
   font-weight: 500;
 }
@@ -15,27 +18,34 @@
   font-weight: 900;
 }
 
-/*===========================*/
-/*【通用設定】*/
-/*使padding與border不會增加總寬度*/
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+/*置中對齊，框住範圍的容器*/
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-/*字型設定*/
-body {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
+/*區域大標題*/
+.areaTitle {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 500;
 }
 
-/*使圖片不會在下方多出2~3px空間*/
-img {
-  display: block;
+/*寬度%數*/
+.w-pc-100 {
+  width: 100%;
 }
 
-/*===========================*/
-/*【flex設定】*/
+/*linbe-height行高*/
+.lh-36 {
+  line-height: 36px;
+}
+
+.lh-42 {
+  line-height: 42px;
+}
+
+/*flex種類*/
 .flex-cc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,17 +74,34 @@ img {
           align-items: flex-start;
 }
 
-/*===========================*/
+/*====================================================*/
+/*【通用設定】*/
+/*使padding與border不會增加總寬度*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*字型設定*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*使圖片不會在下方多出2~3px空間*/
+img {
+  display: block;
+}
+
+/*====================================================*/
 /*【個人介紹區】*/
 .area_Profile {
-  width: 100vw;
   height: 100vh;
   background-image: url(../image/banner.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-/*中間的文字內容等*/
+/*中央的文字內容等*/
 .area_Profile__flexItem p {
   color: #FFFFFF;
   font-weight: 700;
@@ -127,12 +154,20 @@ img {
   background-image: url(../image/YT_hover.svg);
 }
 
-/*===========================*/
+/*====================================================*/
 /*【About區】*/
 .area_About {
   background: #FFFFFF;
   padding-top: 64px;
   padding-bottom: 56px;
+}
+
+.area_About h2 {
+  text-align: center;
+}
+
+.area_About img {
+  margin: 0 auto;
 }
 
 .area_About P {
@@ -171,7 +206,7 @@ img {
   top: 3px;
 }
 
-/*===========================*/
+/*====================================================*/
 /*【My Brand區】*/
 .area_MyBrand {
   background: #000000;
@@ -193,13 +228,15 @@ img {
   font-weight: 500;
 }
 
-/*置中對齊，框住範圍的容器*/
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
+.imgList__flexItem {
+  margin-top: 40px;
 }
 
-/*===========================*/
+.imgList__flexItem img {
+  margin: 0 auto;
+}
+
+/*====================================================*/
 /*【Other Works區】*/
 .area_OtherWorks {
   background: #FFFFFF;
@@ -232,7 +269,7 @@ img {
   margin-top: 16px;
 }
 
-/*===========================*/
+/*====================================================*/
 /*【Contact區】*/
 .area_Contact {
   background: #000000;
@@ -240,59 +277,30 @@ img {
   padding-bottom: 80px;
 }
 
-/*===========================*/
-/*【通用標籤區】*/
-/*區域大標題*/
-.areaTitle {
+.area_Contact h2 {
   font-size: 64px;
   line-height: 75px;
   font-weight: 500;
-}
-
-/*水平置中對齊*/
-.m-0a {
-  margin: 0 auto;
-}
-
-.ta-c {
+  color: #FFFFFF;
   text-align: center;
+  margin-top: 64px;
 }
 
-/*網頁主色、次要色、點綴色*/
-.c-p {
-  color: #000000;
+.area_Contact p {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 16px;
 }
 
-.c-s {
+.area_Contact p a {
   color: #FFFFFF;
 }
 
-.c-a {
-  color: #891818;
-}
-
-/*linbe-height行高*/
-.lh-36 {
-  line-height: 36px;
-}
-
-.lh-42 {
-  line-height: 42px;
-}
-
-/*寬度百分比*/
-.w-pc-32 {
-  width: 32%;
-}
-
-.w-pc-49 {
-  width: 49%;
-}
-
-.w-pc-66 {
-  width: 66%;
-}
-
+/*====================================================*/
+/*【推擠空間用標籤】*/
 /*margin左推*/
 .ml-16 {
   margin-left: 16px;
@@ -305,6 +313,10 @@ img {
 
 .mt-24 {
   margin-top: 24px;
+}
+
+.mt-28 {
+  margin-top: 28px;
 }
 
 .mt-32 {
@@ -327,6 +339,5 @@ img {
   margin-top: 68px;
 }
 
-/*※放在最後面是因為這樣才不會被有設margin:0 auto;的蓋掉*/
-/*===========================*/
+/*====================================================*/
 /*# sourceMappingURL=all.css.map */
