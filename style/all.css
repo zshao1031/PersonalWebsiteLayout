@@ -307,6 +307,10 @@ img {
 }
 
 /*margin上推*/
+.mt-8 {
+  margin-top: 8px;
+}
+
 .mt-16 {
   margin-top: 16px;
 }
@@ -329,14 +333,6 @@ img {
 
 .mt-48 {
   margin-top: 48px;
-}
-
-.mt-56 {
-  margin-top: 56px;
-}
-
-.mt-68 {
-  margin-top: 68px;
 }
 
 /*====================================================*/
