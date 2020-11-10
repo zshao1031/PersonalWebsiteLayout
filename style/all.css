@@ -102,17 +102,23 @@ img {
 }
 
 /*中央的文字內容等*/
-.area_Profile__flexItem p {
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 24px;
-}
-
 .area_Profile__flexItem h1 {
   color: #FFFFFF;
   font-weight: 900;
   font-size: 80px;
   line-height: 94px;
+}
+
+.area_Profile__flexItem h1 span {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.area_Profile__flexItem P {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 /*社群網頁的按鈕設定*/
@@ -162,7 +168,7 @@ img {
   padding-bottom: 56px;
 }
 
-.area_About h2 {
+.area_About .areaTitle {
   text-align: center;
 }
 
@@ -214,7 +220,7 @@ img {
   padding-bottom: 160px;
 }
 
-.area_MyBrand h2 {
+.area_MyBrand .areaTitle {
   color: #FFFFFF;
   text-align: center;
   font-weight: 500;
@@ -244,7 +250,7 @@ img {
   padding-bottom: 160px;
 }
 
-.area_OtherWorks h2 {
+.area_OtherWorks .areaTitle {
   color: #000000;
   text-align: center;
 }
@@ -277,7 +283,7 @@ img {
   padding-bottom: 80px;
 }
 
-.area_Contact h2 {
+.area_Contact .areaTitle {
   font-size: 64px;
   line-height: 75px;
   font-weight: 500;

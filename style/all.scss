@@ -89,17 +89,23 @@ img{
 /*中央的文字內容等*/
 .area_Profile__flexItem{
 
-    p{
-        color: $color_Primary2;
-        font-weight: $fw_II;
-        font-size: 24px;
-    }
-
-    h1{
+    h1{        
         color: $color_Primary2;
         font-weight: $fw_III;
         font-size: 80px;
         line-height: 94px;
+
+        span{
+            color: $color_Primary2;
+            font-weight: $fw_II;
+            font-size: 24px;
+        }
+    }
+
+    P{
+        color: $color_Primary2;
+        font-weight: $fw_II;
+        font-size: 24px;
     }
 
 }
@@ -133,7 +139,7 @@ img{
     padding-top: 64px;
     padding-bottom: 56px;
 
-    h2{
+    .areaTitle{
         text-align: center;
     }
 
@@ -185,7 +191,7 @@ img{
     padding-top: 64px;
     padding-bottom: 160px;
 
-    h2{
+    .areaTitle{
         color: $color_Primary2;
         text-align: center;
         font-weight: $fw_I;
@@ -216,7 +222,7 @@ img{
     padding-top: 64px;
     padding-bottom: 160px;
 
-    h2{
+    .areaTitle{
         color: $color_Primary1;
         text-align: center;
     }
@@ -251,7 +257,7 @@ img{
     padding-top: 64px;
     padding-bottom: 80px;
 
-    h2{
+    .areaTitle{
         font-size: 64px;
         line-height: 75px;
         font-weight: $fw_I;
