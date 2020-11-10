@@ -115,21 +115,36 @@ img{
     display: block;
     width: 60px;
     height: 60px;
+    border-radius: 16px;
 }
 
 .be_Icon{
     background-image: url(../image/BE_Icon.svg);
-    &:hover{background-image: url(../image/BE_hover.svg);}
+    &:hover{
+        background-image:linear-gradient(#CC2424),url(../image/BE_Icon.svg);
+        background-blend-mode: screen;
+    }
 }
 .fb_Icon{
     background-image: url(../image/FB_Icon.svg);
-    &:hover{background-image: url(../image/FB_hover.svg);}
+    &:hover{
+        background-image:linear-gradient(#CC2424),url(../image/FB_Icon.svg);
+        background-blend-mode: screen;
+    }
 }
-.ig_Icon{background-image: url(../image/IG_Icon.svg);
-    &:hover{background-image: url(../image/IG_hover.svg);}
+.ig_Icon{
+    background-image: url(../image/IG_Icon.svg);
+    &:hover{
+        background-image:linear-gradient(#CC2424),url(../image/IG_Icon.svg);
+        background-blend-mode: screen;
+    }
 }
-.yt_Icon{background-image: url(../image/YT_Icon.svg);
-    &:hover{background-image: url(../image/YT_hover.svg);}
+.yt_Icon{
+    background-image: url(../image/YT_Icon.svg);
+    &:hover{
+        background-image:linear-gradient(#CC2424),url(../image/YT_Icon.svg);
+        background-blend-mode: screen;
+    }
 }
 
 /*====================================================*/

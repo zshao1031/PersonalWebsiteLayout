@@ -126,6 +126,7 @@ img {
   display: block;
   width: 60px;
   height: 60px;
+  border-radius: 16px;
 }
 
 .be_Icon {
@@ -133,7 +134,9 @@ img {
 }
 
 .be_Icon:hover {
-  background-image: url(../image/BE_hover.svg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#CC2424)), url(../image/BE_Icon.svg);
+  background-image: linear-gradient(#CC2424), url(../image/BE_Icon.svg);
+  background-blend-mode: screen;
 }
 
 .fb_Icon {
@@ -141,7 +144,9 @@ img {
 }
 
 .fb_Icon:hover {
-  background-image: url(../image/FB_hover.svg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#CC2424)), url(../image/FB_Icon.svg);
+  background-image: linear-gradient(#CC2424), url(../image/FB_Icon.svg);
+  background-blend-mode: screen;
 }
 
 .ig_Icon {
@@ -149,7 +154,9 @@ img {
 }
 
 .ig_Icon:hover {
-  background-image: url(../image/IG_hover.svg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#CC2424)), url(../image/IG_Icon.svg);
+  background-image: linear-gradient(#CC2424), url(../image/IG_Icon.svg);
+  background-blend-mode: screen;
 }
 
 .yt_Icon {
@@ -157,7 +164,9 @@ img {
 }
 
 .yt_Icon:hover {
-  background-image: url(../image/YT_hover.svg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#CC2424)), url(../image/YT_Icon.svg);
+  background-image: linear-gradient(#CC2424), url(../image/YT_Icon.svg);
+  background-blend-mode: screen;
 }
 
 /*====================================================*/
