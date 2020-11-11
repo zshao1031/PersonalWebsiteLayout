@@ -162,7 +162,7 @@ img{
         margin: 0 auto;
     }
 
-    P{
+    .myInfo li{
         font-size: 24px;
         line-height: 42px;
         font-weight: $fw-II;
@@ -209,6 +209,14 @@ img{
     .areaTitle{
         color: $color_Primary2;
         text-align: center;
+        font-weight: $fw_I;
+    }
+
+    h3{
+        color: $color_Primary2;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
         font-weight: $fw_I;
     }
 
@@ -281,7 +289,7 @@ img{
         margin-top: 64px;
     }
 
-    p{
+    ul li{
         font-size: 24px;
         line-height: 36px;
         font-weight: $fw_I;
